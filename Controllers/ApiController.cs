@@ -4,11 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Documentation.Controllers
 {
-    [Route("api/Documentation")]
-    public class DocumentationController : DocumentationControllerBase
+    [Route("api")]
+    public class ApiController : DocumentationControllerBase
     {
-        public DocumentationController(IWebHostEnvironment webHostEnvironment) : base(webHostEnvironment)
+        private readonly IWebHostEnvironment webHostEnvironment;
+
+        public ApiController(IWebHostEnvironment webHostEnvironment)
         {
+            this.webHostEnvironment = webHostEnvironment;
         }
 
         [HttpPost]

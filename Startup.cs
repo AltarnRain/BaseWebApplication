@@ -41,13 +41,17 @@ namespace Documentation
             app.UseRouting();
             app.UseAuthorization();
 
+            app.UseDefaultFiles();
+
             // Route all gets from the client to the client folder and let IIS handle file serving
             // Every call the client does to gain information will be a Post.
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Client")),
-                RequestPath = ""
-            });
+            //app.UseStaticFiles(new StaticFileOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Client")),
+            //    RequestPath = ""
+            //});
+
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {

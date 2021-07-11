@@ -1,5 +1,6 @@
-Client/node_modules
-Client/js
+node_modules
+*.js
+*.js.map
 bin
 .vs
 obj
