@@ -8,7 +8,7 @@ requirejs.config({
 });
 
 // Require the start module and execute it.
-requirejs(["js/Start"], (module: typeof import ("./Start")) => {
+requirejs(["start"], (module: typeof import ("./Start")) => {
     // Call the start function in Start.ts to get things going.
     module.start();
 });

@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDom from "react-dom";
-import { App } from "./App/App";
+import { Application } from "./application/application";
+
 
 export function start(): void {
    const rootElement = document.getElementById("root");
 
-   ReactDom.render(<App/>, rootElement);
+   ReactDom.render(<Application/>, rootElement);
 }
