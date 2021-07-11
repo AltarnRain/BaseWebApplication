@@ -1,4 +1,5 @@
-﻿using DocumentationModels.Menu;
+﻿using DocumentationModels;
+using DocumentationModels.Menu;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,12 @@ namespace Documentation.Controllers
         public ApiController(IWebHostEnvironment webHostEnvironment)
         {
             this.webHostEnvironment = webHostEnvironment;
+        }
+
+        [Route("callApi")]
+        public ResponseModel<string> CallApi()
+        {
+            return this.Respond("I was called");
         }
 
         [HttpPost]
