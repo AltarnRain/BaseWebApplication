@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Documentation.Controllers
 {
     [Route("api")]
-    public class ApiController : DocumentationControllerBase
+    public class ApiController : BaseController
     {
         private readonly IWebHostEnvironment webHostEnvironment;
 

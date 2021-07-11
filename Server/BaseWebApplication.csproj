@@ -5,23 +5,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Client\**" />
     <Compile Remove="wwwroot\src\**" />
+    <Content Remove="Client\**" />
     <Content Remove="wwwroot\src\**" />
+    <EmbeddedResource Remove="Client\**" />
     <EmbeddedResource Remove="wwwroot\src\**" />
+    <None Remove="Client\**" />
     <None Remove="wwwroot\src\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DocumentationModels\DocumentationModels.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Client\" />
     <Folder Include="wwwroot\application\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Models\DocumentationModels.csproj" />
   </ItemGroup>
 
 </Project>
