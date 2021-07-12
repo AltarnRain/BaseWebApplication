@@ -11,14 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Client\**" />
     <Compile Remove="wwwroot\**" />
-    <Content Remove="Client\**" />
-    <Content Remove="wwwroot\**" />
-    <EmbeddedResource Remove="Client\**" />
-    <EmbeddedResource Remove="wwwroot\**" />
-    <None Remove="Client\**" />
-    <None Remove="wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>

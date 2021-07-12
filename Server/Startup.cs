@@ -71,6 +71,7 @@ namespace BaseWebApplication
                 endpoints.MapControllers();
             });
 
+            // Enable swagger and configure the endpoint.
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
         }
