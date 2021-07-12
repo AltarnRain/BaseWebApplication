@@ -28,6 +28,17 @@
             </summary>
             <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
         </member>
+        <member name="M:BaseWebApplication.Controllers.BaseController.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BaseWebApplication.Controllers.BaseController"/> class.
+            </summary>
+            <param name="webHostEnvironment">The web host environment.</param>
+        </member>
+        <member name="P:BaseWebApplication.Controllers.BaseController.WebHostEnvironment">
+            <summary>
+            Gets the web host environment.
+            </summary>
+        </member>
         <member name="M:BaseWebApplication.Controllers.BaseController.Respond``1(``0)">
             <summary>
             Responds with the specified value.

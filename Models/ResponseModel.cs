@@ -15,6 +15,6 @@ namespace Models
         /// <summary>
         /// Gets or sets value we want to return to the client.
         /// </summary>
-        public T Value { get; set; }
+        public T? Value { get; set; }
     }
 }
