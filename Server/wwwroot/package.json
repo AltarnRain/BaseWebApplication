@@ -6,7 +6,7 @@
     "build": "npx tsc",
     "build-watch": "npx tsc --watch",
     "lint": "eslint . --ext .ts",
-    "generate": "openapi --input http://localhost:51220/swagger/v1/swagger.json --output ./generated"
+    "generate": "openapi --input http://localhost:51220/swagger/v1/swagger.json --output ./generated/api"
   },
   "keywords": [],
   "author": "Antonio Invernizzi",

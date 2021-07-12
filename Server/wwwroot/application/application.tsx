@@ -6,7 +6,7 @@
 
 
 import React, { ChangeEvent, useState } from "react";
-import { ApiService } from "../generated/index";
+import { ApiService } from "../generated/api/index";
 
 export function Application(): React.ReactElement {
 
