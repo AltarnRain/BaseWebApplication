@@ -36,5 +36,52 @@
             <param name="value">The value.</param>
             <returns>A response model that contains the value.</returns>
         </member>
+        <member name="T:BaseWebApplication.Program">
+            <summary>
+            Entry point.
+            </summary>
+        </member>
+        <member name="M:BaseWebApplication.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:BaseWebApplication.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Creates the host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>An IHostBuilder.</returns>
+        </member>
+        <member name="T:BaseWebApplication.Startup">
+            <summary>
+            Starts the web application.
+            </summary>
+        </member>
+        <member name="M:BaseWebApplication.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BaseWebApplication.Startup"/> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:BaseWebApplication.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+        </member>
+        <member name="M:BaseWebApplication.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:BaseWebApplication.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">The application.</param>
+            <param name="env">The env.</param>
+        </member>
     </members>
 </doc>
