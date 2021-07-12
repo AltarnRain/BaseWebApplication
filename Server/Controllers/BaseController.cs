@@ -1,16 +1,23 @@
-﻿using DocumentationModels;
-using Microsoft.AspNetCore.Mvc;
+﻿// <copyright file="BaseController.cs" company="Onno Invernizzi">
+// Copyright (c) Onno Invernizzi. All rights reserved.
+// </copyright>
 
 namespace Documentation.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+
+    /// <summary>
+    /// Base class for all controllers.
+    /// </summary>
+    /// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
     public abstract class BaseController : ControllerBase
     {
         /// <summary>
-        /// Responds the specified value.
+        /// Responds with the specified value.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">Any type.</typeparam>
         /// <param name="value">The value.</param>
-        /// <returns></returns>
+        /// <returns>A response model that contains the value.</returns>
         public ResponseModel<T> Respond<T>(T value)
         {
             var response = new ResponseModel<T>
