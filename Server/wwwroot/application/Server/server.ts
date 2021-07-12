@@ -1,3 +1,9 @@
+/*
+ * @preserve Copyright 2019-2021 Onno Invernizzi.
+ * This source code is subject to terms and conditions.
+ * See LICENSE.MD.
+ */
+
 import { Interfaces } from "../../typing/interfaces";
 import { Types } from "../../typing/types";
 
@@ -7,7 +13,7 @@ import { Types } from "../../typing/types";
 export class Server implements Interfaces.Server {
 
     public async callApi(): Promise<string> {
-        const response = await this.postData<string>("callApi")
+        const response = await this.postData<string>("callApi");
         return response;
     }
 
