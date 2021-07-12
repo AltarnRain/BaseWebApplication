@@ -30,10 +30,10 @@ export class Server implements Interfaces.Server {
 
         const responseModel = await response.json() as ResponseModel<T>;
 
-        return responseModel.model;
+        return responseModel.value;
     }
 }
 
 interface ResponseModel<T> {
-    model: T,
+    value: T,
 }
