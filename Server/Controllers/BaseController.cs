@@ -15,7 +15,7 @@ namespace Documentation.Controllers
         {
             var response = new ResponseModel<T>
             {
-                Model = value
+                Value = value
             };
 
             return response;
