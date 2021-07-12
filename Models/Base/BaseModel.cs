@@ -2,7 +2,7 @@
 // Copyright (c) Onno Invernizzi. All rights reserved.
 // </copyright>
 
-namespace DocumentationModels.Base
+namespace Models.Base
 {
     /// <summary>
     /// Base for all data transfer objects (aka, models).

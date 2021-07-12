@@ -11,15 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ResponseModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <AdditionalFiles Include="../stylecop.json" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <AdditionalFiles Include="ResponseModel.cs" />
   </ItemGroup>
 
   <ItemGroup>

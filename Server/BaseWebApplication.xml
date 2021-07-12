@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseWebApplication</name>
+    </assembly>
+    <members>
+        <member name="T:BaseWebApplication.Controllers.ApiController">
+            <summary>
+            Controller for API calls.
+            </summary>
+            <seealso cref="T:BaseWebApplication.Controllers.BaseController" />
+        </member>
+        <member name="M:BaseWebApplication.Controllers.ApiController.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BaseWebApplication.Controllers.ApiController"/> class.
+            </summary>
+            <param name="webHostEnvironment">The web host environment.</param>
+        </member>
+        <member name="M:BaseWebApplication.Controllers.ApiController.CallApi">
+            <summary>
+            Calls the API.
+            </summary>
+            <returns>String response.</returns>
+        </member>
+        <member name="T:BaseWebApplication.Controllers.BaseController">
+            <summary>
+            Base class for all controllers.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:BaseWebApplication.Controllers.BaseController.Respond``1(``0)">
+            <summary>
+            Responds with the specified value.
+            </summary>
+            <typeparam name="T">Any type.</typeparam>
+            <param name="value">The value.</param>
+            <returns>A response model that contains the value.</returns>
+        </member>
+    </members>
+</doc>

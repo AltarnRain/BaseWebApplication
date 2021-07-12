@@ -2,15 +2,14 @@
 // Copyright (c) Onno Invernizzi. All rights reserved.
 // </copyright>
 
-namespace DocumentationModels
+namespace Models
 {
-    using DocumentationModels.Base;
+    using Models.Base;
 
     /// <summary>
     /// Wrapper class for all responses. The client only accepts JSON objects.
     /// </summary>
-    /// <typeparam name="T">Any type</typeparam>
-    /// <seealso cref="DocumentationModels.Base.BaseModel" />
+    /// <typeparam name="T">Any type.</typeparam>
     public class ResponseModel<T> : BaseModel
     {
         /// <summary>

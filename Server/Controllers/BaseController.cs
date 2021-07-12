@@ -2,9 +2,10 @@
 // Copyright (c) Onno Invernizzi. All rights reserved.
 // </copyright>
 
-namespace Documentation.Controllers
+namespace BaseWebApplication.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using Models;
 
     /// <summary>
     /// Base class for all controllers.
@@ -22,7 +23,7 @@ namespace Documentation.Controllers
         {
             var response = new ResponseModel<T>
             {
-                Value = value
+                Value = value,
             };
 
             return response;
