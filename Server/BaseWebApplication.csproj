@@ -12,25 +12,17 @@
 
   <ItemGroup>
     <Compile Remove="Client\**" />
-    <Compile Remove="wwwroot\src\**" />
+    <Compile Remove="wwwroot\**" />
     <Content Remove="Client\**" />
-    <Content Remove="wwwroot\src\**" />
+    <Content Remove="wwwroot\**" />
     <EmbeddedResource Remove="Client\**" />
-    <EmbeddedResource Remove="wwwroot\src\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
     <None Remove="Client\**" />
-    <None Remove="wwwroot\src\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>
     <AdditionalFiles Include="../stylecop.json" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="wwwroot\application\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\index.html" />
   </ItemGroup>
 
   <ItemGroup>
