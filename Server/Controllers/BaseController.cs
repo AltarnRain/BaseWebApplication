@@ -4,6 +4,7 @@
 
 namespace BaseWebApplication.Controllers
 {
+    using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc;
     using Models;
 
@@ -13,6 +14,20 @@ namespace BaseWebApplication.Controllers
     /// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
     public abstract class BaseController : ControllerBase
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BaseController"/> class.
+        /// </summary>
+        /// <param name="webHostEnvironment">The web host environment.</param>
+        public BaseController(IWebHostEnvironment webHostEnvironment)
+        {
+            this.WebHostEnvironment = webHostEnvironment;
+        }
+
+        /// <summary>
+        /// Gets the web host environment.
+        /// </summary>
+        protected IWebHostEnvironment WebHostEnvironment { get; }
+
         /// <summary>
         /// Responds with the specified value.
         /// </summary>

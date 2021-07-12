@@ -15,15 +15,13 @@ namespace BaseWebApplication.Controllers
     [Route("api")]
     public class ApiController : BaseController
     {
-        private readonly IWebHostEnvironment webHostEnvironment;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiController"/> class.
         /// </summary>
         /// <param name="webHostEnvironment">The web host environment.</param>
         public ApiController(IWebHostEnvironment webHostEnvironment)
+            : base(webHostEnvironment)
         {
-            this.webHostEnvironment = webHostEnvironment;
         }
 
         /// <summary>
