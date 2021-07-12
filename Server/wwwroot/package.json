@@ -1,8 +1,7 @@
 {
-  "name": "documentation",
+  "name": "basewebapplication",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "npx tsc",
     "build-watch": "npx tsc --watch",
@@ -10,7 +9,7 @@
     "generate": "openapi --input http://localhost:51220/swagger/v1/swagger.json --output ./generated"
   },
   "keywords": [],
-  "author": "",
+  "author": "Antonio Invernizzi",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "17.0.14",
