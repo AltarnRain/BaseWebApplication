@@ -5,7 +5,7 @@
  */
 import React from "react";
 import ReactDom from "react-dom";
-import { Application } from "./application/application";
+import { Application } from "../application/application";
 
 export function launchApplication(): void {
    const rootElement = document.getElementById("root");

@@ -12,6 +12,6 @@ requirejs.config({
     }
 });
 
-requirejs(["launchApplication"], (module: typeof import ("./launchApplication")) => {
+requirejs(["configuration/launchApplication"], (module: typeof import ("./launchApplication")) => {
     module.launchApplication();
 });
