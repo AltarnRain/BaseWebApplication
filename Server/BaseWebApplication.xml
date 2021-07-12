@@ -16,11 +16,23 @@
             </summary>
             <param name="webHostEnvironment">The web host environment.</param>
         </member>
-        <member name="M:BaseWebApplication.Controllers.ApiController.CallApi">
+        <member name="M:BaseWebApplication.Controllers.ApiController.SayHello(System.String)">
             <summary>
             Calls the API.
             </summary>
-            <returns>String response.</returns>
+            <param name="name">The name.</param>
+            <returns>
+            String response.
+            </returns>
+        </member>
+        <member name="M:BaseWebApplication.Controllers.ApiController.SayGoodbye(System.String)">
+            <summary>
+            Calls the API.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>
+            String response.
+            </returns>
         </member>
         <member name="T:BaseWebApplication.Controllers.BaseController">
             <summary>

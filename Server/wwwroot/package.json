@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npx tsc",
     "build-watch": "npx tsc --watch",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "generate": "openapi --input http://localhost:51220/swagger/v1/swagger.json --output ./generated"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
     "eslint": "^7.30.0",
+    "openapi-typescript-codegen": "^0.9.3",
     "typescript": "4.3.5"
   },
   "dependencies": {

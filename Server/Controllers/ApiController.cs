@@ -12,7 +12,7 @@ namespace BaseWebApplication.Controllers
     /// Controller for API calls.
     /// </summary>
     /// <seealso cref="BaseWebApplication.Controllers.BaseController" />
-    [Route("api")]
+    [Route("api", Name = nameof(ApiController))]
     public class ApiController : BaseController
     {
         /// <summary>
@@ -27,12 +27,29 @@ namespace BaseWebApplication.Controllers
         /// <summary>
         /// Calls the API.
         /// </summary>
-        /// <returns>String response.</returns>
-        [Route("callApi")]
+        /// <param name="name">The name.</param>
+        /// <returns>
+        /// String response.
+        /// </returns>
+        [Route(nameof(SayHello), Name = nameof(SayHello))]
         [HttpPost]
-        public ResponseModel<string> CallApi()
+        public ResponseModel<string> SayHello(string name)
         {
-            return this.Respond("I was called");
+            return this.Respond("Hello " + name);
+        }
+
+        /// <summary>
+        /// Calls the API.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>
+        /// String response.
+        /// </returns>
+        [Route(nameof(SayGoodbye), Name =nameof(SayGoodbye))]
+        [HttpPost]
+        public ResponseModel<string> SayGoodbye(string name)
+        {
+            return this.Respond("Bye " + name);
         }
     }
 }

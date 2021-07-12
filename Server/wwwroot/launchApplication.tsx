@@ -1,12 +1,14 @@
+/*
+ * @preserve Copyright 2019-2021 Onno Invernizzi.
+ * This source code is subject to terms and conditions.
+ * See LICENSE.MD.
+ */
 import React from "react";
 import ReactDom from "react-dom";
 import { Application } from "./application/application";
-import { ApplicationContext } from "./application/context/applicationContext";
 
 export function launchApplication(): void {
    const rootElement = document.getElementById("root");
 
-   const context = new ApplicationContext();
-
-   ReactDom.render(<Application context={context} />, rootElement);
+   ReactDom.render(<Application/>, rootElement);
 }
