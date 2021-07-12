@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { IApplicationContext } from "../Types/Interfaces/IApplicationContext";
+import { Interfaces } from "../typing/interfaces";
 
-export function Application(props: { context: IApplicationContext }): React.ReactElement {
+
+export function Application(props: { context: Interfaces.ApplicationContext }): React.ReactElement {
 
     const [apiRespone, setApiResponse] = useState("No call done yet.");
 

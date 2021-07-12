@@ -1,17 +1,17 @@
-import { Endpoints } from "../../Types/Interfaces/Endpoints";
-import { IServer } from "../../Types/Interfaces/IServer";
+import { Interfaces } from "../../typing/interfaces";
+import { Types } from "../../typing/types";
 
 /**
  * This class abstracts all calls to the backend.
  */
-export class Server implements IServer {
+export class Server implements Interfaces.Server {
 
     public async callApi(): Promise<string> {
         const response = await this.postData<string>("callApi")
         return response;
     }
 
-    private async postData<T>(url: Endpoints, data = {}): Promise<T> {
+    private async postData<T>(url: Types.Endpoints, data = {}): Promise<T> {
 
         const apiCall = `api/${url}`;
 

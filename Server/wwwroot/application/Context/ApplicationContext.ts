@@ -4,15 +4,14 @@
  * See LICENSE.MD.
  */
 
-import { IApplicationContext } from "../../Types/Interfaces/IApplicationContext";
-import { IServer } from "../../Types/Interfaces/IServer";
-import { Server } from "../Server/server";
+import { Interfaces } from "../../typing/interfaces";
+import { Server } from "../server/server";
 
-export class ApplicationContext implements IApplicationContext {
+export class ApplicationContext implements Interfaces.ApplicationContext {
  
     constructor() {
         this.server = new Server();
     }
 
-    public readonly server: IServer;
+    public readonly server: Server;
 }
