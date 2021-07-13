@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{3762ED13-957E-436D-B0B9-BDBDB6FD7F01}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		Settings.Stylecop = Settings.Stylecop
 		stylecop.json = stylecop.json
 	EndProjectSection
 EndProject
@@ -14,6 +15,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{AA62D44C-75BD-4BF5-A4DD-8DCFB950CB0D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{8F761896-F9B6-4187-B5B3-DFAA4A9FC5C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesProvider", "ServicesProvider\ServicesProvider.csproj", "{FCEE71EA-501E-4EBE-AE4C-662264477CD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +36,10 @@ Global
 		{8F761896-F9B6-4187-B5B3-DFAA4A9FC5C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F761896-F9B6-4187-B5B3-DFAA4A9FC5C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F761896-F9B6-4187-B5B3-DFAA4A9FC5C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCEE71EA-501E-4EBE-AE4C-662264477CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEE71EA-501E-4EBE-AE4C-662264477CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEE71EA-501E-4EBE-AE4C-662264477CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEE71EA-501E-4EBE-AE4C-662264477CD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

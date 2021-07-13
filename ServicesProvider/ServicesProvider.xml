@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServicesProvider</name>
+    </assembly>
+    <members>
+        <member name="T:ServicesProvider.Container.DIContainer">
+            <summary>
+            Top level class for services.
+            </summary>
+        </member>
+        <member name="F:ServicesProvider.Container.DIContainer.self">
+            <summary>
+            The self.
+            </summary>
+        </member>
+        <member name="M:ServicesProvider.Container.DIContainer.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:ServicesProvider.Container.DIContainer"/> class from being created.
+            </summary>
+        </member>
+        <member name="M:ServicesProvider.Container.DIContainer.Create">
+            <summary>
+            Creates this instance.
+            </summary>
+            <returns>Instance of DIContainer.</returns>
+        </member>
+        <member name="T:ServicesProvider.Provider.ServicesProvider">
+            <summary>
+            Top level class for providing services.
+            </summary>
+        </member>
+        <member name="M:ServicesProvider.Provider.ServicesProvider.#ctor(Models.Constracts.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ServicesProvider.Provider.ServicesProvider"/> class.
+            </summary>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="P:ServicesProvider.Provider.ServicesProvider.Logger">
+            <summary>
+            Gets the logger.
+            </summary>
+        </member>
+    </members>
+</doc>

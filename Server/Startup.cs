@@ -10,6 +10,7 @@ namespace BaseWebApplication
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
+    using ServicesProvider.Container;
 
     /// <summary>
     /// Starts the web application.
