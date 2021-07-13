@@ -4,6 +4,7 @@
 
 namespace BaseWebApplication.Controllers
 {
+    using BaseWebApplication.Attributes;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc;
     using Models;
@@ -11,8 +12,6 @@ namespace BaseWebApplication.Controllers
     /// <summary>
     /// Controller for API calls.
     /// </summary>
-    /// <seealso cref="BaseWebApplication.Controllers.BaseController" />
-    [Route("api", Name = nameof(ApiController))]
     public class ApiController : BaseController
     {
         /// <summary>
@@ -31,7 +30,7 @@ namespace BaseWebApplication.Controllers
         /// <returns>
         /// String response.
         /// </returns>
-        [Route(nameof(SayHello), Name = nameof(SayHello))]
+        [ApiRoute(nameof(SayHello))]
         [HttpPost]
         public ResponseModel<string> SayHello(string name)
         {
@@ -45,7 +44,7 @@ namespace BaseWebApplication.Controllers
         /// <returns>
         /// String response.
         /// </returns>
-        [Route(nameof(SayGoodbye), Name =nameof(SayGoodbye))]
+        [ApiRoute(nameof(SayGoodbye))]
         [HttpPost]
         public ResponseModel<string> SayGoodbye(string name)
         {

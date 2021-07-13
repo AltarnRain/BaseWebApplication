@@ -4,13 +4,14 @@
 
 namespace BaseWebApplication
 {
+    using BaseWebApplication.Controllers;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
-    using ServicesProvider.Container;
+    using StrongInject.Extensions.DependencyInjection;
 
     /// <summary>
     /// Starts the web application.
@@ -37,7 +38,8 @@ namespace BaseWebApplication
         /// <param name="services">The services.</param>
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().ResolveControllersThroughServiceProvider();
+            services.AddTransientServiceUsingContainer<Container, ApiController>();
 
             services.AddSwaggerGen(c =>
             {
