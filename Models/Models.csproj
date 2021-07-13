@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <AdditionalFiles Include="../stylecop.json" />
-    <AdditionalFiles Include="../settings.stylecop" />
   </ItemGroup>
 
   <ItemGroup>

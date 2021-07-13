@@ -2,7 +2,7 @@
 // Copyright (c) Onno Invernizzi. All rights reserved.
 // </copyright>
 
-namespace Models.Constracts
+namespace Models.Contracts
 {
     using Models.Diagnostics;
 

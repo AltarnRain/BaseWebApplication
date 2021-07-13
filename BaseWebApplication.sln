@@ -6,7 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{3762ED13-957E-436D-B0B9-BDBDB6FD7F01}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		Settings.Stylecop = Settings.Stylecop
 		stylecop.json = stylecop.json
 	EndProjectSection
 EndProject

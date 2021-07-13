@@ -8,6 +8,7 @@ namespace BaseWebApplication.Attributes
 
     /// <summary>
     /// Defines an /api/route.
+    /// Extends RouteAttribute and sets the 'template' as the 'Name'.
     /// </summary>
     /// <seealso cref="Microsoft.AspNetCore.Mvc.RouteAttribute" />
     public class ApiRouteAttribute : RouteAttribute
