@@ -2,6 +2,8 @@
 // Copyright (c) Onno Invernizzi. All rights reserved.
 // </copyright>
 
+#pragma warning disable CS1591
+
 namespace Presentation
 {
     using Application.Contracts;
