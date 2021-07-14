@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Application</name>
+    </assembly>
+    <members>
+        <member name="T:Application.Contracts.IDateTimeProvider">
+            <summary>
+            Provides a Date Time.
+            </summary>
+        </member>
+        <member name="M:Application.Contracts.IDateTimeProvider.Now">
+            <summary>
+            Gets the date time.
+            </summary>
+            <returns>Current date time.</returns>
+        </member>
+        <member name="T:Application.Services.SayService">
+            <summary>
+            Says something.
+            </summary>
+        </member>
+        <member name="F:Application.Services.SayService.dateTimeProvider">
+            <summary>
+            The date time provider.
+            </summary>
+        </member>
+        <member name="M:Application.Services.SayService.#ctor(Application.Contracts.IDateTimeProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Application.Services.SayService"/> class.
+            </summary>
+            <param name="dateTimeProvider">The date time provider.</param>
+        </member>
+        <member name="M:Application.Services.SayService.SayHello(System.String)">
+            <summary>
+            Says the hello.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>Hello Name.</returns>
+        </member>
+        <member name="M:Application.Services.SayService.SayGoodbye(System.String)">
+            <summary>
+            Says the goodbye.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>Bye Name.</returns>
+        </member>
+        <member name="T:Models.Contracts.ILogger">
+            <summary>
+            Defines a contract for a logger class.
+            </summary>
+        </member>
+        <member name="M:Models.Contracts.ILogger.Log(Models.Diagnostics.LogModel)">
+            <summary>
+            Logs the specified log model.
+            </summary>
+            <param name="logModel">The log model.</param>
+        </member>
+    </members>
+</doc>

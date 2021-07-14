@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Models</name>
+    </assembly>
+    <members>
+        <member name="T:Models.Base.BaseModel">
+            <summary>
+            Base for all data transfer objects (aka, models).
+            </summary>
+        </member>
+        <member name="T:Models.ResponseModel`1">
+            <summary>
+            Wrapper class for all responses. The client only accepts JSON objects.
+            </summary>
+            <typeparam name="T">Any type.</typeparam>
+        </member>
+        <member name="P:Models.ResponseModel`1.Value">
+            <summary>
+            Gets or sets value we want to return to the client.
+            </summary>
+        </member>
+    </members>
+</doc>
