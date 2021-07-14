@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="../stylecop.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
   </ItemGroup>  
 </Project>
