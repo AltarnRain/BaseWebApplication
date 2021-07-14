@@ -10,7 +10,8 @@ namespace Presentation
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
-    using Presentation.Extensions;
+    using Presentation.Controllers;
+    using StrongInject.Extensions.DependencyInjection;
 
     /// <summary>
     /// Starts the web application.
@@ -37,8 +38,8 @@ namespace Presentation
         /// <param name="services">The services.</param>
         public void ConfigureServices(IServiceCollection services)
         {
-            // We'll use an extension method to setup StrongInject.
-            services.ConfigureDependencyInjection();
+            services.AddControllers().ResolveControllersThroughServiceProvider();
+            services.AddTransientServiceUsingContainer<DIContainer, ApiController>();
 
             services.AddSwaggerGen(c =>
             {
