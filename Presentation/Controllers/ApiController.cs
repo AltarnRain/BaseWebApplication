@@ -4,7 +4,6 @@
 
 namespace Presentation.Controllers
 {
-    using Application.Services;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc;
     using Models;
@@ -15,17 +14,14 @@ namespace Presentation.Controllers
     /// </summary>
     public class ApiController : BaseController
     {
-        private readonly SayService sayService;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiController" /> class.
         /// </summary>
         /// <param name="webHostEnvironment">The web host environment.</param>
         /// <param name="sayService">The say service.</param>
-        public ApiController(IWebHostEnvironment webHostEnvironment, SayService sayService)
+        public ApiController(IWebHostEnvironment webHostEnvironment)
             : base(webHostEnvironment)
         {
-            this.sayService = sayService;
         }
 
         /// <summary>
@@ -39,8 +35,7 @@ namespace Presentation.Controllers
         [HttpPost]
         public ResponseModel<string> SayHello(string name)
         {
-            var response = this.sayService.SayHello(name);
-            return this.Respond(response);
+            return this.Respond("Hello " + name);
         }
 
         /// <summary>
@@ -54,8 +49,7 @@ namespace Presentation.Controllers
         [HttpPost]
         public ResponseModel<string> SayGoodbye(string name)
         {
-            var response = this.sayService.SayGoodbye(name);
-            return this.Respond(response);
+            return this.Respond("Bye " + name);
         }
     }
 }

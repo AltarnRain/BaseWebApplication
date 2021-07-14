@@ -5,7 +5,6 @@
 namespace Presentation.DependencyInjection
 {
     using Application.Contracts;
-    using Application.Services;
     using Infrastructure.Services;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +17,6 @@ namespace Presentation.DependencyInjection
     /// DI Container.
     /// </summary>
     [Register(typeof(ApiController), Scope.InstancePerResolution)]
-    [Register(typeof(SayService), Scope.InstancePerResolution)]
     [Register(typeof(CurrentDateTimeProvider), Scope.SingleInstance, typeof(IDateTimeProvider))]
 
     public partial class DIContainer : IContainer<ApiController>
