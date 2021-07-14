@@ -10,8 +10,7 @@ namespace Presentation
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
-    using Presentation.Controllers;
-    using StrongInject.Extensions.DependencyInjection;
+    using Presentation.DependencyInjection;
 
     /// <summary>
     /// Starts the web application.
@@ -38,9 +37,12 @@ namespace Presentation
         /// <param name="services">The services.</param>
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().ResolveControllersThroughServiceProvider();
-            services.AddTransientServiceUsingContainer<DIContainer, ApiController>();
+            // Setup dependency injection.
+            services.SetupDependencyInjection();
 
+            // Setup additional services not handled by dependency injection.
+
+            // Setup Swagger/OpenApi.
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
